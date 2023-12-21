@@ -2,7 +2,8 @@
 
 
 .billing {
-  opacity: 0;
+  display: none;
+  
   background-color: hsla(210, 4%, 11%, 1);
   position: absolute;
   right: 30%;
@@ -20,7 +21,7 @@
 }
 
 .billing-active {
-  opacity: 1;
+  display: block;
 }
 
 .Bill-payment{

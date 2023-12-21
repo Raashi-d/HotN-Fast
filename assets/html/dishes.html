@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hot N' Fast</title>
+
+  <!-- Title icon -->
+  <link rel="shortcut icon" href="../images/title-image.png" type="image/png">
+
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="../css/genral.css">
+  <link rel="stylesheet" href="../css/preload.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/navbar.css">
+	<link rel="stylesheet" href="../css/dishes.css">
+  <link rel="stylesheet" href="../css/cart.css">
+  <link rel="stylesheet" href="../css/payment.css">
+
+</head>
+<body>
+
+	<!---------------- #PRELOADER ---------------->
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Hot N' Fast</p>
+  </div>
+
+  <!---------------- Header ---------------->
+  <header>
+    <div class="logo">
+      <img src="../images/HotnFast.png" alt="Hot N' Fast">
+    </div>
+  </header>
+
+  <!---------------- Nav Bar ---------------->
+  <nav>
+    <div class="navbar">
+      <div class="navbar-space"></div>
+
+
+      
+      <div class="navbar-item">
+        <a href="main.html" class="navbar-link">
+          <img src="../images/home.png" alt="">
+        </a>
+
+        <a href="main.html">
+          <div>HOME</div> 
+        </a>
+
+      </div>
+         
+      <div class="navbar-item">
+        <a href="#" class="navbar-link">
+          <img src="../images/dishes.png" alt="">
+        </a>
+
+        <a href="#">
+          <div>DISHES</div>
+        </a>
+      
+      </div>
+
+      <div class="navbar-item">
+        <a href="main.html#about-us">
+          <img src="../images/aboutUs.png" alt="">
+        </a>
+
+        <a href="main.html">
+          <div>ABOUT US</div>
+        </a>
+        
+      </div>
+
+      <div class="navbar-item">
+        <a href="main.html#footer">
+          <img src="../images/contactus.png" alt="">
+        </a>
+
+
+        <a href="main.html#footer">
+          <div>CONTACT US</div>
+        </a>
+      </div>
+
+      <div class="navbar-item">
+        <a href="#">
+          <img src="../images/profile.png" alt="">
+        </a>
+
+        <a href="#">
+          <div>PROFILE</div>
+        </a>
+        
+      </div>
+      <div class="navbar-space"></div>
+    </div>
+  </nav>
+
+	<!---------------- side bar ---------------->
+	<div class="side-bar">
+    
+		<div class="sidebar-link">
+      <a href="#1">
+        <img src="../images/sidebar-1.png" alt="">
+      </a>
+      <a href="#1">
+        <div class="food-tip">Appetizers</div>
+      </a>
+    </div>
+
+    <div class="sidebar-link">
+      <a href="#2">
+        <img src="../images/sidebar-5.png" alt="">
+      </a>
+      <a href="#2">
+        <div class="food-tip">Main Courses</div>
+      </a>
+    </div>
+
+    <div class="sidebar-link">
+      <a href="#3">
+        <img src="../images/sidebar-3.png" alt="">
+      </a>
+      <a href="#3">
+        <div class="food-tip">Pizza Creations</div>
+      </a>
+    </div>
+
+    <div class="sidebar-link">
+      <a href="#4">
+        <img src="../images/sidebar-4.png" alt="">
+      </a>
+      <a href="#4">
+        <div class="food-tip">Drinks</div>
+      </a>
+    </div>
+
+    <div class="sidebar-link">
+      <a href="#">
+        <img src="../images/cart.png" id="cart-icon">
+      </a>
+      <a href="#4">
+        <div class="food-tip">My Cart</div>
+        <span class="cart-item-count">0</span>
+      </a>
+    </div>
+
+	</div> 
+
+  <!---------------- cart ---------------->
+  <div class="cart">
+
+    <div class="cart-title">Cart items</div>
+    <div class="order-grid">
+      <a href="#">
+      <button class="buy-btn" onclick="">PLace Order</button>
+      </a>
+      <div class="total">
+        <div class="total-title">Total</div>
+        <div class="total-price">Rs.0</div>
+      </div>
+    </div>
+    <div class="cart-content">
+
+      <!-- <div class="cart-box">
+          <img src="../cart-image/ap-1.jpg" class="cart-img">
+          <div class="ditail-box">
+            <div class="cart-food-title">Crispy Calamari</div>
+            <div class="price-box">
+              <div class="cart-price">2990.00 LKR</div>
+              <div class="cart-amt">2990.00 LKR</div>
+            </div>
+            <input type="number" value="1" class="cart-quantity">
+          </div>
+          <img src="../images/delete.png" name="trash" class="cart-remove">         
+      </div> -->
+
+    </div>
+    
+    <img src="../images/close.png" name="close" id="cart-close">
+  
+  </div>
+
+
+  <!-----------------payment  ---------------->
+  <form action="" class="billing">
+    <h1 class="Bill-payment">Bill Payment</h1>
+    <div class="row">
+
+      <div class="col">
+
+        <h3 class="title">billing address</h3>
+
+        <div class="inputBox">
+          <span>full name :</span>
+          <input type="text" placeholder="Mohamed Raashid" required>
+        </div>
+        <div class="inputBox">
+          <span>email :</span>
+          <input type="email" placeholder="example@example.com">
+        </div>
+        <div class="inputBox">
+          <span>address :</span>
+          <input type="text" placeholder="room - street - locality" required>
+        </div>
+        <div class="inputBox">
+          <span>city :</span>
+          <input type="text" placeholder="Kandy" required>
+        </div>
+  
+        <div class="inputBox">
+          <span>zip code :</span>
+          <input type="text" placeholder="123 456" required>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+        <h3 class="title">payment</h3>
+
+        <div class="inputBox">
+          <span>cards accepted :</span>
+          <img src="../images/card_img.png" alt="">
+        </div>
+        <div class="inputBox">
+          <span>name on card :</span>
+          <input type="text" placeholder="MRM RAASHID" required>
+        </div>
+        <div class="inputBox">
+          <span>credit card number :</span>
+          <input type="number" placeholder="XXXX XXXX XXXX XXXX" required>
+        </div>
+
+        <div class="card-date">
+
+          <div class="inputBox">
+            <span>exp :</span>
+            <input type="text" placeholder="XX/XX" required>
+         </div>
+
+          <div class="inputBox">
+            <span>CVV :</span>
+            <input type="text" placeholder="XXX" required>
+          </div>
+        </div>
+
+      </div>
+  
+    </div>
+    <button class="submit-btn" >Cancecl Payment</button>
+    <button class="submit-btn" >Proceed to Checkout</button>
+
+    <img src="../images/close.png" alt="" class="close-icon">
+
+  </form>
+
+
+  <!---------------- Dishes ---------------->
+  <div>
+  <!-- Appetizers -->
+  <div class="dish-grid" id="1">
+
+    <div class="main-menu-title">
+      <P class="menu-text-1">Special Selection</P>
+      <P class="menu-text-2">Appetizers</P>
+    </div>
+
+    <div class="dish-cards">
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/ap-1.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Crispy Calamari</p>
+            <p class="dish-price">Rs. 1300.00</p>
+          </div>
+          <p class="dish-detail">Lightly battered and fried calamari rings, served with zesty marinara sauce.</p> 
+        </div>
+
+        <input class="btn cart-btn" type="button" value="ADD TO CART"   id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/ap-2.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Caprese Skewers</p>
+            <p class="dish-price">Rs. 1500.00</p>
+          </div>
+          <p class="dish-detail">Fresh mozzarella, cherry tomatoes, and basil drizzled with balsamic glaze.</p>
+
+        </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/ap-3.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Spinach Artichoke Dip</p>
+            <p class="dish-price">Rs. 800.00</p>
+          </div>
+          <p class="dish-detail">Creamy blend of spinach, artichokes, and melted cheeses, accompanied by warm tortilla chips.</p>
+         </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" name="cart" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/ap-4.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Bruschetta Al Pomodoro</p>
+            <p class="dish-price">Rs. 1200.00</p>
+          </div>
+          <p class="dish-detail">Diced tomatoes, garlic, basil, and extra virgin olive oil on toasted baguette slices.</p>
+                              
+        </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/ap-5.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Stuffed Mushrooms</p>
+            <p class="dish-price">Rs. 500.00</p>
+          </div>
+          <p class="dish-detail">Mushrooms filled with a savory blend of herbs, breadcrumbs, and melted cheese.</p>         
+        </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/main-6.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Shrimp Spring Rolls</p>
+            <p class="dish-price">Rs. 700.00</p>
+          </div>
+          <p class="dish-detail">Light and crisp spring rolls filled with shrimp, vegetables, and served with a tangy dipping sauce.</p>
+          
+        </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      
+    
+    </div>
+
+  </div>
+
+  <!-- MAin courses -->
+  <div class="dish-grid" id="2">
+
+    <div class="main-menu-title">
+      <P class="menu-text-1">Special Selection</P>
+      <P class="menu-text-2">Main Courses</P>
+    </div>
+
+    <div class="dish-cards">
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/main-1.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Grilled Salmon with Lemon-Dill Sauce</p>
+            <p class="dish-price">Rs. 1200.00</p>
+          </div>
+          <p class="dish-detail">Fresh salmon fillet grilled to perfection, topped with a zesty lemon-dill sauce.</p>
+       </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/main- 2.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Chicken Piccata</p>
+            <p class="dish-price">Rs. 1600.00</p>
+          </div>
+          <p class="dish-detail">Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices</p>          
+        </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/main-3.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Vegetarian Lasagna</p>
+            <p class="dish-price">Rs. 800.00</p>
+          </div>
+          <p class="dish-detail"> Layers of pasta, ricotta, spinach, and marinara sauce baked to cheesy perfection.</p>
+            
+        </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/main-4.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Beef Tenderloin Medallions</p>
+            <p class="dish-price">Rs. 1500.00</p>
+          </div>
+          <p class="dish-detail">Succulent beef medallions seared and served with a rich red wine reduction.</p>         
+        </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/main-5.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Penne alla Vodka</p>
+            <p class="dish-price">Rs. 1300.00</p>
+          </div>
+          <p class="dish-detail">Penne pasta in a creamy tomato and vodka sauce, garnished with fresh basil.</p>         
+        </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/main-6.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Egg plant Parmesan</p>
+            <p class="dish-price">Rs. 1200.00</p>
+          </div>
+          <p class="dish-detail">Breaded and baked eggplant slices layered with marinara sauce and melted mozzarella.</p>         
+        </div>
+        <input class="btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>  
+
+    </div>
+
+  </div>
+
+  <!-- pizza creation -->
+  <div class="dish-grid" id="3">
+
+    <div class="main-menu-title">
+      <P class="menu-text-1">Special Selection</P>
+      <P class="menu-text-2">Pizza Creations</P>
+    </div>
+
+    <div class="dish-cards">
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/pizza -1.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Margherita Pizza</p>
+            <p class="dish-price">Rs. 1300.00</p>
+          </div>
+          <p class="dish-detail">Fresh mozzarella, tomatoes, and basil on a thin crust.</p>
+
+          
+            <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+          
+        </div>
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/pizza -2.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">BBQ Chicken Pizza</p>
+            <p class="dish-price">Rs. 1800.00</p>
+          </div>
+          <p class="dish-detail">Grilled chicken, red onions, and BBQ sauce drizzle.</p>
+
+          
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/pizza-3.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Mediterranean Veggie Pizza</p>
+            <p class="dish-price">Rs. 1500.00</p>
+          </div>
+          <p class="dish-detail">Olives, artichokes, feta cheese, and roasted red peppers.</p>
+
+          
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/pizza-4.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Meat Lovers' Pizza</p>
+            <p class="dish-price">Rs. 2000.00</p>
+          </div>
+          <p class="dish-detail">Pepperoni, sausage, bacon, and ground beef.</p>
+
+          
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/pizza-5.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">White Pizza with Spinach and Ricotta</p>
+            <p class="dish-price">Rs. 1500.00</p>
+          </div>
+          <p class="dish-detail">Garlic-infused olive oil, spinach, and dollops of ricotta.</p>
+
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/pizza-6.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Buffalo Chicken Pizza</p>
+            <p class="dish-price">Rs. 2000.00</p>
+          </div>
+          <p class="dish-detail">Spicy buffalo sauce, grilled chicken, and blue cheese crumbles.</p>
+
+         
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+
+      </div>
+    
+    </div>
+
+  </div>
+
+  <!-- Drinks -->
+  <div class="dish-grid" id="4">
+
+    <div class="main-menu-title">
+      <P class="menu-text-1">Special Selection</P>
+      <P class="menu-text-2">Drinks</P>
+    </div>
+
+    <div class="dish-cards">
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/d-1.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Mango Mint Lemonade</p>
+            <p class="dish-price">Rs. 700.00</p>
+          </div>
+          <p class="dish-detail">Fresh mango puree, mint leaves, and lemonade.</p>
+
+          
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/d-2.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Cucumber Basil Sparkler</p>
+            <p class="dish-price">Rs. 800.00</p>
+          </div>
+          <p class="dish-detail">Cucumber slices, basil leaves, and sparkling water..</p>
+
+          
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/d-3.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Classic Mojito</p>
+            <p class="dish-price">Rs. 600.00</p>
+          </div>
+          <p class="dish-detail">Rum, mint, lime, and simple syrup over ice.</p>
+
+         
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/d-4.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Strawberry Basil Lemonade</p>
+            <p class="dish-price">Rs. 1200.00</p>
+          </div>
+          <p class="dish-detail">Muddled strawberries, basil, and lemonade</p>
+
+          
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/d-5.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">Iced Chai Lattes</p>
+            <p class="dish-price">Rs. 1000.00</p>
+          </div>
+          <p class="dish-detail">Chilled chai tea with milk and a hint of spice.</p>
+
+          
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+
+      </div>
+
+      <div class="dish-item">
+        <div class="dish-image">
+          <img class="food-img" src="../images/menu/d-6.jpg" alt="">
+        </div>
+
+        <div class="dish-info">
+          <div class="top-info">
+            <p class="dish-name">>Blueberry Mint Sparkling Lemonade</p>
+            <p class="dish-price">Rs. 1300.00</p>
+          </div>
+          <p class="dish-detail">Blueberries, mint, and sparkling lemonade.</p>
+
+          
+        </div>
+        <input class=" btn cart-btn" type="button" value="ADD TO CART" id="" >
+
+      </div>
+    
+    </div>
+
+  </div>
+
+  </div>
+
+
+ 
+
+
+
+
+	<script src="../js/preload.js"></script>
+  <script src="../js/addtocart.js"></script>
+  
+	
+</body>
+</html>
