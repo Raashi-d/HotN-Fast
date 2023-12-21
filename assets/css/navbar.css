@@ -1,0 +1,45 @@
+.navbar {
+    background-color: hsla(210, 4%, 11%, 1);
+    color: white;
+
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    height: 55px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    z-index: 5;
+}
+
+.navbar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1; 
+    white-space: nowrap;
+    cursor: pointer;
+    
+}
+
+.navbar-item:hover {
+    background-color: hsl(38, 61%, 73%) ;
+}
+
+
+
+
+.navbar-item img {
+    width: 30px;
+    
+}
+
+.navbar-space {
+    display: flex;
+    flex: 2;
+}
+

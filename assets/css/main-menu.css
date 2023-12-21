@@ -1,0 +1,83 @@
+.main-menu {
+    display: relative;
+    padding: 0 100px;
+    
+}
+
+.main-menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+     
+    align-items: center;
+}
+
+.menu-items {
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.45);
+}
+
+.menu-items:hover {
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.85);
+    
+}
+
+.main-menu-img {
+    position: relative;
+    align-items: center;
+    border-bottom: 1px solid rgb(255, 255, 255);
+       
+}
+
+.service-img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    align-items: top;
+}
+
+
+
+.main-menu-title { 
+    padding: 130px 0;
+    text-align: center;   
+}
+
+.menu-text-1 {
+    color: rgb(255, 204, 0);
+    font-family: 'Great Vibes', cursive;
+    font-weight: 70;
+    font-size: 90px;
+    
+}
+
+.menu-text-2 {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.main-menu-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 135px;
+    
+    
+}
+
+.main-menu-name {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.main-menu-details {
+    margin: 0;
+    text-align: center;
+    color: rgb(224, 222, 222);
+    font-size: 16px;
+}
+

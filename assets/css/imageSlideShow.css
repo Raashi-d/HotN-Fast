@@ -1,0 +1,73 @@
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  text-align: center;
+}
+
+.slideshow-container img {
+  width: 100%;
+}
+
+/* Caption text */
+.main-text-1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f2f2f2;
+  font-size: 50px;
+  line-height: 90px;
+  
+}
+
+.main-text-2 {
+  color: #f7aa05;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  letter-spacing: 5px;
+
+  z-index: 1;
+}
+
+/* The dots indicators */
+
+.dot-bar {
+  display: flex;
+  justify-content: center;
+   
+  position: absolute;
+  bottom: 8px;
+  width: 100%;  
+ }
+
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 9s;
+}
+
+@keyframes fade {
+  from {opacity: .8} 
+  to {opacity: 1}
+}
+
+

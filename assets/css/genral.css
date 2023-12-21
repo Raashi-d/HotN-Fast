@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+      
+}
+
+body {
+    background-color:hsla(210, 4%, 9%, 1);
+    font-family: 'Forum', cursive;
+    margin-top: 120px;
+    
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    display: block;
+    height: inherit;
+  text-decoration: none;
+  color: white;
+}
