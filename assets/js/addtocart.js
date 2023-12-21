@@ -102,7 +102,7 @@ function createCartProdect(title, price, imgSrc){
             </div>
             <input type="number" value="1" class="cart-quantity">
           </div>
-          <img src="./assets/images/delete.png" name="trash" class="cart-remove">         
+          <img src="../images/delete.png" name="trash" class="cart-remove">         
       </div>
     `;
 }

@@ -17,7 +17,7 @@
       $rows=mysqli_num_rows( $result);
       if($rows>0){
 
-         header('Location: ../../index.html');
+         header('Location: ../html/main.html');
          
          
       } 

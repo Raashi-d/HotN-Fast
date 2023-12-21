@@ -194,34 +194,34 @@
 
 
   <!-----------------payment  ---------------->
-  <form action="" class="billing">
+  <form action="../php/checkout.php" method="POST" class="billing">
     <h1 class="Bill-payment">Bill Payment</h1>
     <div class="row">
-
+      
       <div class="col">
 
         <h3 class="title">billing address</h3>
-
+      
         <div class="inputBox">
           <span>full name :</span>
-          <input type="text" placeholder="Mohamed Raashid" required>
+          <input type="text" placeholder="Mohamed Raashid" name="fullname" required>
         </div>
         <div class="inputBox">
           <span>email :</span>
-          <input type="email" placeholder="example@example.com">
+          <input type="email" placeholder="example@example.com" name="email" required>
         </div>
         <div class="inputBox">
           <span>address :</span>
-          <input type="text" placeholder="room - street - locality" required>
+          <input type="text" placeholder="room - street - locality" name="address" required>
         </div>
         <div class="inputBox">
           <span>city :</span>
-          <input type="text" placeholder="Kandy" required>
+          <input type="text" placeholder="Kandy" name="city" required>
         </div>
   
         <div class="inputBox">
           <span>zip code :</span>
-          <input type="text" placeholder="123 456" required>
+          <input type="number" placeholder="123 456" name="zipcode" required>
         </div>
 
       </div>
@@ -236,32 +236,33 @@
         </div>
         <div class="inputBox">
           <span>name on card :</span>
-          <input type="text" placeholder="MRM RAASHID" required>
+          <input type="text" placeholder="MRM RAASHID" name="cardname" required>
         </div>
         <div class="inputBox">
           <span>credit card number :</span>
-          <input type="number" placeholder="XXXX XXXX XXXX XXXX" required>
+          <input type="number" placeholder="XXXX XXXX XXXX XXXX" name="cardnumber" required>
         </div>
 
         <div class="card-date">
 
           <div class="inputBox">
             <span>exp :</span>
-            <input type="text" placeholder="XX/XX" required>
+            <input type="number" placeholder="XX/XX" name="expnumber" required>
          </div>
 
           <div class="inputBox">
             <span>CVV :</span>
-            <input type="text" placeholder="XXX" required>
+            <input type="number" placeholder="XXX" name="cvvnumber" required>
           </div>
         </div>
 
       </div>
+    
   
     </div>
     <button class="submit-btn" >Cancecl Payment</button>
     <button class="submit-btn" >Proceed to Checkout</button>
-
+  
     <img src="../images/close.png" alt="" class="close-icon">
 
   </form>
