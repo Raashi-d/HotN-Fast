@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 21, 2023 at 05:27 PM
+-- Generation Time: Dec 22, 2023 at 10:43 AM
 -- Server version: 8.0.31
 -- PHP Version: 8.0.26
 
@@ -40,7 +40,7 @@ CREATE TABLE IF NOT EXISTS `checkout` (
   `expnumber` int NOT NULL,
   `cvvnumber` int NOT NULL,
   PRIMARY KEY (`order_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `checkout`
@@ -64,16 +64,16 @@ CREATE TABLE IF NOT EXISTS `register` (
   `Pnumber` int NOT NULL,
   `pword` varchar(50) NOT NULL,
   `Confirmpw` varchar(50) NOT NULL,
-  `gender` int NOT NULL,
+  `gender` enum('male','female','notprefer') NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `register`
 --
 
 INSERT INTO `register` (`id`, `fname`, `Uname`, `Email`, `Pnumber`, `pword`, `Confirmpw`, `gender`) VALUES
-(4, 'Mohamed Raashid', 'Raashid', 'mhmdrashid@gmail.com', 771234567, 'Raashid', 'Raashid', 0);
+(10, 'Mohammed Raashid', 'Raashid', 'raashid@gmail.com', 2147483647, '12345', '12345', 'male');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
