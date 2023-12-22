@@ -40,13 +40,13 @@ if (!empty($fname) || !empty($Uname) || !empty($Email) || !empty($Pnumber) || !e
             $stmt = $conn->prepare($INSERT);
             $stmt->bind_param("sssisss", $fname, $Uname, $Email, $Pnumber, $pword, $Confirmpw, $gender);
             $stmt->execute();
-            echo "Register sucessfully...";
-            header("Location: ../html/login.html");
 
-            $alert = "<script>alert('Register sucessfully<br>Now Login to your account');</script>";
-            echo $alert;
+            echo "<script>alert('You have registered successfully.');
+            window.location.href='../html/login.html';</script>";
+
            } else {
-            echo "Someone already register using this email";
+            echo "<script>alert('Someone has already registered using this email!');
+            window.location.href='../html/registration.html';</script>";
            }
             $stmt->close();
             $conn->close();

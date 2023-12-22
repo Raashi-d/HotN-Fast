@@ -137,16 +137,28 @@ function updateTotal(){
 }
 
 //Bill payment
-const btnPayment=document.querySelector('.buy-btn');
-const billing=document.querySelector('.billing');
-const btnClosePayment=document.querySelector('.close-icon');
+const btnPayment = document.querySelector('.buy-btn');
+const billing = document.querySelector('.billing');
+const btnClosePayment = document.querySelector('.close-icon');
 
-//open billing
-btnPayment.addEventListener('click',()=>{
-    billing.classList.add('billing-active');
+// Function to check if the total is greater than 0
+function isTotalGreaterThanZero() {
+    const totalValue = parseFloat(document.querySelector('.total-price').innerHTML.replace("Rs. ", ""));
+    return totalValue > 0;
+}
+
+// Open billing only if the total is greater than 0
+btnPayment.addEventListener('click', () => {
+    if (isTotalGreaterThanZero()) {
+        billing.classList.add('billing-active');
+    } else {
+        alert("Sorry unable to complete the payment as the cart is empty.");
+        // You can display a message or take other actions if the total is not greater than 0
+        console.log('Total value is not greater than 0. Cannot place an order.');
+    }
 });
 
-//close billing
-btnClosePayment.addEventListener('click',()=>{
+// Close billing
+btnClosePayment.addEventListener('click', () => {
     billing.classList.remove('billing-active');
 });

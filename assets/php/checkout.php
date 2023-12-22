@@ -20,10 +20,11 @@ $rs = mysqli_query($con, $sql);
 
 if ($rs) {
     
-    echo "<script>alert('Your order has been placed successfully!');</script>";
-    header("Location: ../html/dishes.html");
+    echo "<script>alert('Your order has been placed successfully!');
+    window.location.href='../html/dishes.html';</script>";
 } else {
-    echo "Error: " . mysqli_error($con);
+    echo "<script>alert('Your Payment Feild!. Try again!');
+    window.location.href='../html/dishes.html';</script>";
 }
 
 

@@ -23,8 +23,7 @@
       } 
       else{
         
-        $alert = "<script>alert('You have entered invalid username or password');</script>";
-            echo $alert;
-         exit();
+         echo "<script>alert('You have entered an invalid username or password.');
+         window.location.href='../html/login.html';</script>"; 
         }
 ?> 
